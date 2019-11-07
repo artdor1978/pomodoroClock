@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="center">
+        <div className="leftHalf">
+          <h1>Pomodoro Clock</h1>
+        </div>
+        <div className="rightHalf">
+          <span id="break-label">Break Length</span>
+          <span id="session-label">Session Length</span>
+          <span id="break-decrement">-</span>
+          <span id="break-length" className="slider-preview">
+            5
+          </span>
+          <span id="break-increment">+</span>
+          <span id="session-decrement">-</span>
+          <span id="session-length" className="slider-preview">
+            25
+          </span>
+          <span id="session-increment">+</span>
+          <span id="timer-label">Session</span>
+          <span id="time-left"></span>
+          <span id="start_stop"></span>
+          <span id="reset"></span>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,22 +1,57 @@
-.App {
+.slider-preview {
+  display: inline-block;
+  background: #404241;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  vertical-align: middle;
+  padding: 10px 0px;
   text-align: center;
+  top: -1px;
+  border-radius: 4px;
 }
-
-.App-logo {
-  height: 40vmin;
+span {
+  width: 100px;
+  height: 100px;
+  border: 0.3em solid #f16149;
+  display: inline-block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding-top: 15px;
+  padding-bottom: 25px;*/
+}
+/*body {
+  background: url('PClock.jpg') no-repeat center center fixed;
+  background-size: cover;
+}*/
+.leftHalf {
+  background: url('PClock.jpg');
+  background-size: cover;
+  width: 65%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  text-align: right;
+}
+.rightHalf {
+  width: 35%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  background-color: grey;
+}
+h1 {
+  color: #f16149;
+  font-family: 'Mitr', sans-serif;
+  font-size: 11rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  line-height: 0.8em;
+  position: relative;
+  top: 35%;
 }
