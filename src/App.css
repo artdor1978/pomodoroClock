@@ -1,35 +1,6 @@
-.slider-preview {
-  display: inline-block;
-  background: #404241;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  vertical-align: middle;
-  padding: 10px 0px;
-  text-align: center;
-  top: -1px;
-  border-radius: 4px;
+body {
+  font-family: 'Mitr', sans-serif;
 }
-span {
-  width: 100px;
-  height: 100px;
-  border: 0.3em solid #f16149;
-  display: inline-block;
-}
-.center {
-  /*position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  padding-top: 15px;
-  padding-bottom: 25px;*/
-}
-/*body {
-  background: url('PClock.jpg') no-repeat center center fixed;
-  background-size: cover;
-}*/
 .leftHalf {
   background: url('PClock.jpg');
   background-size: cover;
@@ -39,19 +10,55 @@ span {
   height: 100%;
   text-align: right;
 }
-.rightHalf {
-  width: 35%;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  background-color: grey;
-}
 h1 {
   color: #f16149;
-  font-family: 'Mitr', sans-serif;
   font-size: 11rem;
   display: flex;
   line-height: 0.8em;
   position: relative;
   top: 35%;
+  text-shadow: -3px 0 #ffcdd2, 0 3px #ffcdd2, 3px 0 #ffcdd2, 0 -3px #ffcdd2;
+}
+.rightHalf {
+  width: 35%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  background-color: #bdbdbd;
+}
+.slider-preview {
+  background: #404241;
+  color: #fff;
+  width: 40px;
+  height: 32px;
+  margin-left: 25px;
+  vertical-align: middle;
+  padding: 5px 0px;
+  text-align: center;
+  border-radius: 4px;
+}
+.timeSlider {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: auto 20px;
+  margin-bottom: 35px;
+  align-items: center;
+  padding: 10px 20px;
+}
+#session-label,
+#break-label {
+  grid-column: 1 / 4;
+  align-items: end;
+}
+#line {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+#break-decrement,
+#break-increment,
+#session-decrement,
+#session-increment:hover {
+  cursor: grab;
 }
