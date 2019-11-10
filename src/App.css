@@ -12,11 +12,11 @@ body {
 }
 h1 {
   color: #f16149;
-  font-size: 11rem;
+  font-size: 10em;
   display: flex;
   line-height: 0.8em;
   position: relative;
-  top: 35%;
+  top: 45%;
   text-shadow: -3px 0 #ffcdd2, 0 3px #ffcdd2, 3px 0 #ffcdd2, 0 -3px #ffcdd2;
 }
 .rightHalf {
