@@ -16,7 +16,7 @@ h1 {
   display: flex;
   line-height: 0.8em;
   position: relative;
-  top: 45%;
+  top: 30%;
   text-shadow: -3px 0 #ffcdd2, 0 3px #ffcdd2, 3px 0 #ffcdd2, 0 -3px #ffcdd2;
 }
 .rightHalf {

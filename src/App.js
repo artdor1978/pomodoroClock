@@ -5,26 +5,26 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 25
+      count: 25,
     };
-    this.increment = this.increment.bind(this)
-    this.decrement = this.decrement.bind(this)
-    this.reset = this.reset.bind(this) 
-  } 
+    this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
+    this.reset = this.reset.bind(this);
+  }
   increment() {
     this.setState({
-      count: this.state.count + 1
-    })
+      count: this.state.count + 1,
+    });
   }
   decrement() {
     this.setState({
-      count: this.state.count - 1
-    })
+      count: this.state.count - 1,
+    });
   }
   reset() {
     this.setState({
-      count: 0
-    })
+      count: 0,
+    });
   }
   render() {
     return (

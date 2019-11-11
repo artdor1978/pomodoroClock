@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/react@16/umd/react.
+development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.
+development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/
+babel.min.js"></script>
+<style>
+#container {
+padding: 50px;
+background-color: #FFF;
+}
+/*.labelString {
+padding: 10px;
+margin: 10px;
+background-color: #FFDE00;
+color: #333;
+display: inline-block;
+font-family: monospace;
+font-size: 32px;
+text-align: center;
+}*/
+</style>
+</head>
+<body>
+	<div id="container"></div>
+<script type="text/babel">
+	class Stringify extends React.Component {
+		render() {
+			var letterStyle = {
+				padding: 10,
+				margin: 10,
+				backgroundColor: this.props.bgcolor,
+				color: "#333",
+				display: "inline-block",
+				fontFamily: "monospace",
+				fontSize: 32,
+				textAlign: "center"
+			};
+	    	return (
+				<span style={letterStyle} id={this.props.id}>{this.props.children}</span>
+	    	)
+  		}
+	}
+	ReactDOM.render(
+		<div>
+	  		<Stringify id="break-label" bgcolor="#58B3FF">Break Length</Stringify>
+	  		<Stringify id="session-label" bgcolor="#FF605F">Session Length</Stringify>
+	  		<Stringify id="timer-label" bgcolor="#49DD8E">Session</Stringify>
+		</div>,
+		document.querySelector("#container")
+	);
+</script>
+</body>
+</html>
